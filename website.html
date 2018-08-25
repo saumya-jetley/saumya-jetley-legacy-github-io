@@ -1,0 +1,197 @@
+<!-- The following template has been taken from https://www.w3schools.com/w3css/w3css_templates.asp
+and has been modified for purpose.-->
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Comic Sans MS", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Comic Sans MS", cursive}
+
+/* unvisited link */
+a:link {
+    color: IndianRed;
+}
+/* visited link */
+a:visited {
+    color: IndianRed;
+}
+/* mouse over link */
+a:hover {
+    color: IndianRed;
+}
+/* selected link */
+a:active {
+    color: Indianred;
+}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-16">
+    
+    <h3 class="w3-wide" style="font-family:Comic Sans MS"><b>Saumya Jetley</b></h3>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#about" class="w3-bar-item w3-button w3-white"><p id="Babout" onclick="Babout_col()" style="Line-Height:0.1" >About Me</p></a>
+    <a href="#publ" class="w3-bar-item w3-button w3-white"><p id="Bpubl" onclick="Bpubl_col()" style="Line-Height:0.1">Publications</p></a>
+    <a onclick="myAccFunc()" href="#" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Projects <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">Straight to Shapes</a>
+      <a href="#" class="w3-bar-item w3-button">Straight to Shapes++</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="#" class="w3-bar-item w3-button">Contact Me</a>
+  </div>
+  <!-- <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> -->
+</nav>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+
+<!-- -------About Me------- -->
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container" >
+    <h1> </h1>
+    <img src="gitim.jpeg" style="width:20%">
+  </div>
+
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge" >
+    <h4 class="w3-left" style="font-family:Comic Sans MS; font-size:70%;"> PhD Student, University of Oxford <br/>Domain: Artificial Intelligence for Visual Perception <br/> Interests: Probing deep networks; Visual attention modeling; Representation learning</h4>
+    <p class="w3-right">
+   		<i class="fa fa-twitter w3-hover-opacity" id="twitter"></i>
+    	<i class="fa fa-linkedin w3-hover-opacity" id="linkedin"></i>
+    </p>
+    <div class="w3-left" id="about">
+    <hr style="width:800px">
+    <body>
+    <p style="font-size:60%; font-family:Comic Sans MS;"> I am a final year PhD student at the Torr Vision Group, University of Oxford under Prof. Philip Torr.
+    </p>
+    <body>
+    </div>
+  </header>
+
+<header class="w3-container w3-xlarge" >
+  <div class="w3-left" >
+    <hr style="width:800px">
+    <body>
+    <div style="font-size:60%; font-family:Comic Sans MS;" id="publ">
+      <p> 2018 </p>
+      <b> With Friends Like These, Who Needs Adversaries?,</b> 
+      Saumya Jetley*, Nicholas A. Lord*, Philip H.S. Torr,
+      <i>Available on arxiv</i>
+      [<a href="https://arxiv.org/abs/1807.04200">pdf</a>]
+      [<a >code:forthcoming</a>]<br/><br/>
+      <b> Learn to pay attention, </b> 
+      Saumya Jetley, Nicholas A. Lord, Namhoon Lee, Philip H.S. Torr,
+      <i>Proceedings of the 6th International conference on learning representations (ICLR) 2018</i>
+      [<a href="https://arxiv.org/pdf/1804.02391.pdf">pdf</a>]
+      [<a href="https://github.com/saumya-jetley/cd_ICLR18_ActiveAttention">code</a>]
+      <br/>
+      <p style="color:rgb(70,70,70);font-size:100%"> 2017 </p>
+      <b> End-to-end saliency mapping via probability distribution prediction, </b> 
+      Saumya Jetley, Naila Murray, Eleonora Vig,
+      <i>U.S. Patent 9,830,529 with Xerox Corp (now Naver Labs)</i>
+      [<a href="https://patents.google.com/patent/US9830529B2/en">details</a>]
+      <br/><br/>
+      <b> Straight to Shapes: Real-time Detection of Encoded Shapes, </b> 
+      Saumya Jetley*, Michael Sapienza*, Stuart Golodetz, Philip H.S. Torr,
+      <i>Proceedings of the International conference on Computer Vision and Pattern Recognition (CVPR) 2017</i>
+      [<a href="http://openaccess.thecvf.com/content_cvpr_2017/papers/Jetley_Straight_to_Shapes_CVPR_2017_paper.pdf">pdf</a>]
+      [<a href="https://github.com/torrvision/straighttoshapes">code</a>]
+      <br/>
+      <p> 2016 </p>
+      <b> End-to-End Saliency Mapping via Probability Distribution Prediction, </b> 
+      Saumya Jetley, Naila Murray, Eleonora Vig,
+      <i>Proceedings of the International conference on Computer Vision and Pattern Recognition (CVPR) 2016</i>
+      [<a href="https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Jetley_End-To-End_Saliency_Mapping_CVPR_2016_paper.pdf">pdf</a>]
+      [<a href="https://github.com/saumya-jetley/cd_Saliency_PDP">code</a>]
+      <br/>
+      <p> 2015 </p>
+      <b> Prototypical Priors: From Improving Classification to Zero-Shot Learning , </b> 
+      Saumya Jetley, Bernardino Romera-Paredes, Sadeep Jayasumana, Philip H.S. Torr,
+      <i>Proceedings of the British Machine Vision Conference (BMVC) 2015</i>
+      [<a href="https://arxiv.org/abs/1512.01192">pdf</a>]
+      [<a href="https://github.com/saumya-jetley/cd_Prototypical_Priors_BMVC15">code</a>]
+      <br/><br/>
+      <p> 2014 </p>
+      <b> 3D Activity Recognition Using Motion History and Binary Shape Templates , </b> 
+      Saumya Jetley, Fabio Cuzzolin,
+      <i>Workshop proceedings of the Asian Conference on Computer Vision (ACCV) 2014 </i>
+      [<a href="https://link.springer.com/chapter/10.1007/978-3-319-16628-5_10">pdf</a>]
+      <br/><br/>
+      <b> Multi-script Identification from Printed Words , </b> 
+      Saumya Jetley, Kapil Mehrotra, Atish Vaze, Swapnil Belhe,
+      <i>proceedings of the International conference on Image Analysis and Recognition (ICIAR) 2014 </i>
+      [<a href="https://link.springer.com/chapter/10.1007/978-3-319-11758-4_39">pdf</a>]
+      <br/>
+      <p> 2013 </p>
+      <b> Automatic flag recognition using texture based color analysis and gradient features  , </b> 
+      Saumya Jetley, Atish Vaze, Swapnil Belhe,
+      <i>Proceedings of the International conference on Image Information Processing (ICIIP) 2013 </i>
+      [<a href="https://ieeexplore.ieee.org/abstract/document/6707635/">pdf</a>]
+      <br/><br/>
+      <b> Unconstrained handwritten Devanagari character recognition using convolutional neural networks , </b> 
+      Kapil Mehrotra, Saumya Jetley, Akash Deshmukh, Swapnil Belhe,
+      <i> Proceedings of the 4th International workshop on Multilingual OCR (MOCR) 2013</i>
+      [<a href="https://dl.acm.org/citation.cfm?id=2505386">pdf</a>]
+      <br/>
+      <p> 2012 </p>
+      <a href="https://dl.acm.org/citation.cfm?id=2432556">
+      Hindi handwritten word recognition using HMM and symbol tree 
+      </a><br/> <br/>
+      <a href="http://f4k.dieei.unict.it/proceedings/ICPR2012/media/files/2949.pdf">
+      Two-Stage hybrid binarization around fringe map based text line segmentation for document images 
+      </a>
+    </div>
+    <body>
+  </div>
+</header>
+
+
+  
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function Babout_col() {
+    document.getElementById("Babout").style.color = "IndianRed";
+    document.getElementById("Bpubl").style.color = "black";
+}
+function Bpubl_col() {
+    document.getElementById("Bpubl").style.color = "IndianRed";
+    document.getElementById("Babout").style.color = "black";
+}
+
+</script>
+
+</body>
+</html>
+
