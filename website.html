@@ -11,8 +11,8 @@ and has been modified for purpose.-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-.w3-sidebar a {font-family: "Comic Sans MS", cursive}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Comic Sans MS", cursive}
+.w3-sidebar a {font-family: "Times New Roman", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
 /* unvisited link */
 a:link {
@@ -36,22 +36,19 @@ a:active {
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    
-    <h3 class="w3-wide" style="font-family:Comic Sans MS"><b>Saumya Jetley</b></h3>
+    <h3 class="w3-wide" style="font-family:Times New Roman"><b>Saumya Jetley</b></h3>
   </div>
   <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#about" class="w3-bar-item w3-button w3-white"><p id="Babout" onclick="Babout_col()" style="Line-Height:0.1" >About Me</p></a>
-    <a href="#publ" class="w3-bar-item w3-button w3-white"><p id="Bpubl" onclick="Bpubl_col()" style="Line-Height:0.1">Publications</p></a>
-    <a onclick="myAccFunc()" href="#" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-      Projects <i class="fa fa-caret-down"></i>
-    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-white"><p id="Babout"/ onclick="Babout_col()" style="Line-Height:0.1" >About Me</p></a>
+   <a onclick="myAccFunc()" href="#projects" class="w3-button w3-block w3-white w3-left-align" id="myBtn">Projects <i class="fa fa-caret-down"></i></a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#" class="w3-bar-item w3-button">Straight to Shapes</a>
-      <a href="#" class="w3-bar-item w3-button">Straight to Shapes++</a>
+      <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes</a>
+      <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes++</a>
     </div>
-    <a href="#" class="w3-bar-item w3-button">Hobbies</a>
-    <a href="#" class="w3-bar-item w3-button">Contact Me</a>
-  </div>
+    <a href="#hobbies" class="w3-bar-item w3-button">Hobbies</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact Me</a>
+    <a href="#publ" class="w3-bar-item w3-button w3-white"><p id="Bpubl" onclick="Bpubl_col()" style="Line-Height:0.1">Publications</p></a>
+   </div>
   <!-- <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
   <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> -->
@@ -76,25 +73,48 @@ a:active {
 
   <!-- Top header -->
   <header class="w3-container w3-xlarge" >
-    <h4 class="w3-left" style="font-family:Comic Sans MS; font-size:70%;"> PhD Student, University of Oxford <br/>Domain: Artificial Intelligence for Visual Perception <br/> Interests: Probing deep networks; Visual attention modeling; Representation learning</h4>
+    <h4 class="w3-left" style="font-family:Times New Roman; font-size:65%;"> PhD Student, University of Oxford <br/><i>Domain: Artificial Intelligence for Visual Perception</i> <br/> <i>Interests: Probing deep networks; Visual attention modelling; Representation learning</i></h4>
     <p class="w3-right">
    		<i class="fa fa-twitter w3-hover-opacity" id="twitter"></i>
     	<i class="fa fa-linkedin w3-hover-opacity" id="linkedin"></i>
     </p>
-    <div class="w3-left" id="about">
-    <hr style="width:800px">
-    <body>
-    <p style="font-size:60%; font-family:Comic Sans MS;"> I am a final year PhD student at the Torr Vision Group, University of Oxford under Prof. Philip Torr.
-    </p>
-    <body>
-    </div>
   </header>
 
-<header class="w3-container w3-xlarge" >
-  <div class="w3-left" >
+  <header class="w3-container w3-xlarge">
+    <div id="about"></div>
+    <hr style="width:800px">
+    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> I am a final year PhD student under Prof. Philip Torr at the Torr Vision Group, Department of Engineering Science, University of Oxford.
+    </p>
+  </header>
+
+
+  <header class="w3-container w3-xlarge">
+    <div id="projects"></div>
+    <hr style="width:800px">
+    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> We need a lineup of gifs of different projects
+    </p>
+  </header>
+
+  <header class="w3-container w3-xlarge">
+    <div id="hobbies"></div>
+    <hr style="width:800px">
+    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> The list of hobbies
+    </p>
+  </header>
+
+  <header class="w3-container w3-xlarge">
+    <div id="contact"></div>
+    <hr style="width:800px">
+    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> Email address - contact me for details of any project
+    </p>
+  </header>
+
+
+ <header class="w3-container w3-xlarge" >
+  <div class="w3-left" id="publ" >
     <hr style="width:800px">
     <body>
-    <div style="font-size:60%; font-family:Comic Sans MS;" id="publ">
+    <div style="font-size:70%; font-family:Times New Roman;"align="justify">
       <p> 2018 </p>
       <b> With Friends Like These, Who Needs Adversaries?,</b> 
       Saumya Jetley*, Nicholas A. Lord*, Philip H.S. Torr,
@@ -167,8 +187,6 @@ a:active {
   </div>
 </header>
 
-
-  
 
 <script>
 // Accordion 
