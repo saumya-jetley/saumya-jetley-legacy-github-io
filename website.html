@@ -3,7 +3,8 @@ and has been modified for purpose.-->
 
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<head>
+<title>Saumya Jetley</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -16,11 +17,11 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
 /* unvisited link */
 a:link {
-    color: IndianRed;
+    color: Black;
 }
 /* visited link */
 a:visited {
-    color: IndianRed;
+    color: Black;
 }
 /* mouse over link */
 a:hover {
@@ -31,77 +32,83 @@ a:active {
     color: Indianred;
 }
 </style>
+</head>
 <body class="w3-content" style="max-width:1200px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:320px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
+    <img src="gitim.jpeg" style="width:70%">
     <h3 class="w3-wide" style="font-family:Times New Roman"><b>Saumya Jetley</b></h3>
-  </div>
-  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
-    <a href="#about" class="w3-bar-item w3-button w3-white"><p id="Babout"/ onclick="Babout_col()" style="Line-Height:0.1" >About Me</p></a>
-   <a onclick="myAccFunc()" href="#projects" class="w3-button w3-block w3-white w3-left-align" id="myBtn">Projects <i class="fa fa-caret-down"></i></a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <i>DPhil Student, University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
+    <!-- class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> -->
+    <br />
+    <br />
+    <a href="#about" style="text-decoration:none"><h4 id="Babout" onclick="Babout_col()"><strong>Home</strong></h4></a>
+    <a href="#hobbies" style="text-decoration:none"><h4 id="Bhobbies" onclick="Bhobbies_col()"><strong>Updates</strong></h4></a>
+    <a onclick="myAccFunc()" href="#projects" id="Bprojects" style="text-decoration:none"><h4><strong>Research Projects</strong></h4></a>
+    <!-- <i class="fa fa-caret-down"></i>
+      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes</a>
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes++</a>
-    </div>
-    <a href="#hobbies" class="w3-bar-item w3-button">Hobbies</a>
-    <a href="#contact" class="w3-bar-item w3-button">Contact Me</a>
-    <a href="#publ" class="w3-bar-item w3-button w3-white"><p id="Bpubl" onclick="Bpubl_col()" style="Line-Height:0.1">Publications</p></a>
-   </div>
-  <!-- <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
-  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
-  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> -->
-</nav>
+      </div>-->
+    <a href="#publ" style="text-decoration:none"><h4 id="Bpubl" onclick="Bpubl_col()"><strong>Publications</strong></h4></a>
+    <br />
+    <a><i class="fa fa-twitter w3-hover-opacity" id="twitter"></i></a>&ensp;
+    <a><i class="fa fa-linkedin w3-hover-opacity" id="linkedin"></i></a>&ensp;
+    <a><i class="fa fa-github w3-hover-opacity" id="linkedin"></i></a>&ensp;
+  </div>
+ </nav>
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
+<div class="w3-main" style="margin-left:320px">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
 
-<!-- -------About Me------- -->
+<!-- -------Home------- -->
 
   <!-- Image header -->
-  <div class="w3-display-container w3-container" >
-    <h1> </h1>
-    <img src="gitim.jpeg" style="width:20%">
-  </div>
+  <Header class="w3-container w3-xlarge" id="about">
+    <h1 style="font-size:75%; font-family:Times New Roman;" align="center"><strong> <br />PhD student under Prof. Philip Torr <br /> Torr Vision Group, Department of Engineering Science, University of Oxford</strong>
+  </h1>
+  </Header>
 
 
   <!-- Top header -->
-  <header class="w3-container w3-xlarge" >
-    <h4 class="w3-left" style="font-family:Times New Roman; font-size:65%;"> PhD Student, University of Oxford <br/><i>Domain: Artificial Intelligence for Visual Perception</i> <br/> <i>Interests: Probing deep networks; Visual attention modelling; Representation learning</i></h4>
-    <p class="w3-right">
-   		<i class="fa fa-twitter w3-hover-opacity" id="twitter"></i>
-    	<i class="fa fa-linkedin w3-hover-opacity" id="linkedin"></i>
-    </p>
-  </header>
-
   <header class="w3-container w3-xlarge">
-    <div id="about"></div>
-    <hr style="width:800px">
-    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> I am a final year PhD student under Prof. Philip Torr at the Torr Vision Group, Department of Engineering Science, University of Oxford.
+    <hr style="width:850px">
+    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> My research interests lie in the area of artificial intelligence for visual perception. Towards this, my recent work lies in the area of representation learning for scene understanding tasks using deep convolutional neural networks (DCNs). The focus of the work has been threefold: 
+    <ul  style="font-size:73%; font-family:Times New Roman;" align="justify">
+      <li> Systematic changes to the network architecture and loss function design to incorporate prior/contextual knowledge for improving performance at scene understanding tasks; </li>
+      <li> Attention modelling for improving interpretability and performance of DCNs; </li>
+      <li> Geometrical analysis of DCN decision boundaries to characterise their behaviour and explain their adversarial vulnerability.</li>
+    </ul>
     </p>
-  </header>
-
-
-  <header class="w3-container w3-xlarge">
-    <div id="projects"></div>
-    <hr style="width:800px">
-    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> We need a lineup of gifs of different projects
-    </p>
+    
   </header>
 
   <header class="w3-container w3-xlarge">
     <div id="hobbies"></div>
     <hr style="width:800px">
-    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> The list of hobbies
-    </p>
+    <h3 style="font-size:73%; font-family:Times New Roman;" align="justify">-- Recent Updates --</h3>
+    <p><ul style="font-size:65%; font-family:Times New Roman;">
+      <li>I presented my work on attention modelling in deep convolutional networks for classification at ICLR 2018.</li>
+      <li>Received the St. Cross College research scholarship and ICLR 2018 travel award to attend ICLR in Vancouver this year.</li>
+      <li>I organised a super exciting coding workshop for middle and high school students at the Hay Festival, more details here. </li>
+      <li>Volunteered </li>
+    </ul></p>
   </header>
 
+  <header class="w3-container w3-xlarge">
+    <div id="projects"></div>
+    <hr style="width:800px">
+    <p style="font-size:73%; font-family:Times New Roman;" align="justify"> 
+    </p>
+  </header>
+  <iframe width="400" height="300" src="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <header class="w3-container w3-xlarge">
     <div id="contact"></div>
     <hr style="width:800px">
@@ -190,6 +197,13 @@ a:active {
 
 <script>
 // Accordion 
+function Babout_col() {
+    document.getElementById("Babout").style.color="IndianRed";
+    document.getElementById("Bprojects").style.color="black";
+    document.getElementById("Bhobbies").style.color="black";
+    document.getElementById("Bpubl").style.color="black";
+}
+
 function myAccFunc() {
     var x = document.getElementById("demoAcc");
     if (x.className.indexOf("w3-show") == -1) {
@@ -197,15 +211,18 @@ function myAccFunc() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+    document.getElementById("Babout").style.color="Black";
+    document.getElementById("Bprojects").style.color="IndianRed";
+    document.getElementById("Bhobbies").style.color="Black";
+    document.getElementById("Bpubl").style.color="Black";
 }
 
-function Babout_col() {
-    document.getElementById("Babout").style.color = "IndianRed";
-    document.getElementById("Bpubl").style.color = "black";
-}
+
 function Bpubl_col() {
-    document.getElementById("Bpubl").style.color = "IndianRed";
-    document.getElementById("Babout").style.color = "black";
+    document.getElementById("Babout").style.color="Black";
+    document.getElementById("Bprojects").style.color="Black";
+    document.getElementById("Bhobbies").style.color="Black";
+    document.getElementById("Bpubl").style.color="IndianRed";
 }
 
 </script>
