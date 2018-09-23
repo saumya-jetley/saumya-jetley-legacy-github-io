@@ -57,7 +57,7 @@ a.sidemenu.onView {
 <body class="w3-content" style="max-width:1050px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <img src="gitim.jpeg" style="width:100%">
     <h3 class="w3-wide" style="font-family:Times New Roman"><b>Saumya Jetley</b></h3>
@@ -74,7 +74,9 @@ a.sidemenu.onView {
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes</a>
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes++</a>
       </div>-->
+    <a id="data-side" class="sidemenu" href="#data" style="text-decoration:none" onclick="makeOnView()"><strong>Datasets</strong></a><br />
     <a id="publ-side" class="sidemenu" href="#publ" style="text-decoration:none" onclick="makeOnView()"><strong>Publications</strong></a>
+
     </h4>
     <br />
     <h3>
@@ -87,7 +89,7 @@ a.sidemenu.onView {
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:240px">
+<div class="w3-main" style="margin-left:150px">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
@@ -99,8 +101,8 @@ a.sidemenu.onView {
   <Header class="w3-container w3-xlarge sidemenu-link" id="about">
     <h1 style="font-size:75%; font-family:Times New Roman;" align="center"><strong> 
     <br/>I am a final year PhD student under <a href=http://www.robots.ox.ac.uk/~phst/ style="text-decoration:none">Prof. Philip Torr</a> 
-    <br/>generously funded by the competitive <a href=https://epsrc.ukri.org/skills/students/ style="text-decoration:none">EPSRC research scholarship</a>
-    <br/>to pursue my PhD in AI for scene understanding at the University of Oxford.
+    <br/>generously funded by the <a href=https://epsrc.ukri.org/skills/students/ style="text-decoration:none">EPSRC research scholarship</a> to pursue
+    <br/>research in 'AI for scene understanding' at the University of Oxford.
 </strong>
   </h1>
   </Header>
@@ -110,7 +112,7 @@ a.sidemenu.onView {
   <header class="w3-container w3-xlarge">
     <!--<hr style="width:800px">-->
     <p style="font-size:75%; font-family:Times New Roman;" align="justify"> 
-    My research covers the broad themes of computer vision, machine learning and deep learning. More fine-grained topics include applied computer vision (for saliency estimation, object recognition, instance segmentation), attention modelling in deep neural nets, analysis of adversariality in deep neural nets.    
+    My research covers the broad themes of computer vision, machine learning and deep learning. In the area of applied computer vision, I have worked on topics of human saliency estimation, object recognition, instance segmentation and attention modelling in deep neural nets. My recent work focuses on explaining the adversarial phenomenon observed in deep neural networks for image classification. 
     <!--The focus of the work has been threefold: 
     <ul  style="font-size:67%; font-family:Times New Roman" align="justify">
       <li> Systematic changes to the network architecture and loss function design to incorporate prior/contextual 
@@ -126,14 +128,20 @@ a.sidemenu.onView {
     <hr style="width:800px">
     <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Updates </strong></h2>
     <p style="font-size:67%; font-family:Times New Roman;">
-    09/18: Our paper explaining adversarial vulnerability in deep neural nets got accepted at NIPS'18.<br />
-    08/18: I am co-organising the 'Frontiers of Computer Vision' track at the Indaba'18.<br />
+    09/18: Our paper explaining adversarial vulnerability in deep neural nets is accepted at NIPS'18. 
+    (<a href="https://nips.cc/Conferences/2018/Schedule?showEvent=12016">With friends like these..</a>)<br />
+    08/18: I am co-organising the <a href="http://www.deeplearningindaba.com/computer-vision-parallel-track.html">'Frontiers of Computer Vision'</a> track 
+    at the <a href="http://www.deeplearningindaba.com/2018.html"> Deep Learning Indaba'18</a>.<br />
     06/18: I will be the outreach officer with OxWoCS for the academic year 2018-19. Our relationship history here.<br />
-    05/18: I am co-organising a coding workshop at the Hay Science Festival. More details here.<br />
+    05/18: I am co-organising a <a href = "https://www.hayfestival.com/p-13591-bushra-alahmadi-klaudia-krawiecka-saumya-jetley.aspx">coding workshop</a>
+     at the <a href="http://www.hayfestival.com/wales/home">Hay Science Festival</a>.<br />
     05/18: I am presenting my work at ICLR'18. Some highlights here.<br />
     04/18: Grateful to be receiving <a href=https://www.stx.ox.ac.uk/about-st-cross>St. Cross</a> travel and research scholarship.<br />
     03/18: Grateful to be receiving the ICLR'18 travel award.<br />
-    01/18: Our paper on learning attention in classification CNNs is accepted at ICLR'18. <br/>
+    01/18: Our paper on learning attention in classification CNNs is accepted at ICLR'18. 
+    (<a href="https://openreview.net/forum?id=HyzbhfWRW"> Learn to pay attention!</a>) <br/>
+    <br/>
+    <a href='./about.html'>Older news</a>
     </p>
   </header>
 
@@ -162,7 +170,7 @@ I want to be able to write the text alongside the videos/images. What happens if
 
   <header class="w3-container w3-xlarge">
     <br />
-    <iframe width="300" height="220" align="left"  src="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-right:25px"></iframe>
+    <iframe width="300" height="220" align="left"  src="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-right:25px"></iframe><br />
     <h3 style="font-size:85%; font-family:Times New Roman;" align="justify">Straight to Shapes</h3>
     <p style="font-size:65%; font-family:Times New Roman;" align="justify"> 
 I want to be able to write the text alongside the videos/images. What happens if I keep writing the text till it hits the newline?
@@ -171,12 +179,25 @@ I want to be able to write the text alongside the videos/images. What happens if
   </header>
 
 
+    <header class="w3-container w3-xlarge">
+      <div id="data" class="sidemenu-link"></div>
+      <hr style="width:800px">
+      <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Datasets </strong></h2>
+      <p style="font-size:70%; font-family:Times New Roman;">
+      Long long time ago, I gathered a dataset of 'Country Flags in the Wild'. It comprises of
+      --- train images and -- test images of the flags of -- countries obtained from the images on world wide web and cropped manually to 
+      loosely fit to the flag. More details can be found in the paper. <br/>
+      It can downloaded from here by submitting this copyright form to my email address and receiving the passkey.
+      </p>
+   </header>
+   
+   
 
  <header class="w3-container w3-xlarge" >
   <div class="w3-left sidemenu-link" id="publ" >
-    <br />
     <hr style="width:800px">
-    <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Publications </strong></h2>
+    <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Publications </strong> &ensp;
+    <a href="https://scholar.google.co.uk/citations?user=jdWaKDIAAAAJ&hl=en"><svg height="35" width="40" viewBox="0 0 1755 1755" xmlns="http://www.w3.org/2000/svg"><path transform="translate(0 1610) scale(1 -1)" d="M896.76 1130.189c-27.618 30.838-59.618 46.19-95.802 46.19-40.952 0-72.382-14.738-94.288-44.15-21.906-29.322-32.864-64.848-32.864-106.584 0-35.548 5.998-71.738 18-108.64 11.958-36.886 31.524-69.814 58.954-98.838 27.334-29.096 59.144-43.616 95.284-43.616 40.288 0 71.76 13.502 94.332 40.492 22.476 26.954 33.756 60.98 33.756 101.962 0 34.904-5.954 71.454-17.906 109.664-11.894 38.262-31.752 72.784-59.466 103.52zM1658.858 1512.573c-64.358 64.424-141.86 96.57-232.572 96.57h-1097.142c-90.712 0-168.14-32.146-232.572-96.57-64.424-64.286-96.57-141.86-96.57-232.572v-1097.142c0-90.712 32.146-168.288 96.57-232.712 64.432-64.146 142-96.432 232.572-96.432h1097.142c90.712 0 168.214 32.286 232.572 96.57 64.432 64.432 96.644 141.86 96.644 232.572v1097.142c0 90.712-32.22 168.288-96.644 232.572zM1297.81 1154.159v-392.126c0-18.154-14.856-33.016-33.016-33.016h-12.156c-18.162 0-33.016 14.856-33.016 33.016v392.126c0 16.12-2.34 29.578 20.188 32.41v52.172l-173.43-142.24c2.004-3.716 3.906-6.092 5.712-9.208 15.242-26.976 23.004-60.526 23.004-101.53 0-31.43-5.238-59.662-15.858-84.598-10.57-24.928-23.428-45.29-38.43-60.972-15.002-15.74-30.048-30.128-45.092-43.074-15.046-12.976-27.904-26.506-38.436-40.55-10.614-14-15.894-28.474-15.894-43.476 0-15.024 6.854-30.288 20.524-45.67 13.62-15.426 30.376-30.376 50.19-45.144 19.85-14.666 39.658-30.946 59.472-48.662 19.858-17.694 36.52-40.456 50.14-68.096 13.722-27.744 20.568-58.288 20.568-91.86 0-44.288-11.294-84.282-33.806-119.882-22.58-35.446-51.998-63.73-88.144-84.472-36.242-20.882-75-36.6-116.334-47.214-41.42-10.518-82.52-15.806-123.568-15.806-25.908 0-52.048 1.996-78.336 6.1-26.382 4.096-52.81 11.33-79.426 21.526-26.668 10.262-50.286 22.864-70.758 37.998-20.524 14.98-37.046 34.312-49.716 57.856-12.668 23.552-18.958 50.022-18.958 79.426 0 34.882 9.714 67.24 29.192 97.404 19.478 29.944 45.282 54.952 77.378 74.76 55.998 34.838 143.858 56.364 263.432 64.498-27.334 34.172-41.048 66.334-41.048 96.432 0 17.122 4.476 35.474 13.334 55.288-14.284-1.996-28.994-3.124-44.002-3.124-64.234 0-118.476 20.882-162.524 62.932-44.046 41.976-66.048 94.522-66.048 158.048 0 6.642 0.19 12.492 0.672 18.974h-261.046l393.618 342.17h651.856l-60.24-47.024v-82.996c22.368-2.874 20.004-16.318 20.004-32.394zM900.382 544.929c-7.52 1.36-18.088 2.122-31.708 2.122-29.382 0-58.288-2.596-86.666-7.782-28.38-5.046-56.378-13.568-83.998-25.592-27.722-11.952-50.096-29.528-67.146-52.766-17.144-23.208-25.666-50.542-25.666-81.994 0-29.974 7.52-56.714 22.572-80.004 15.002-23.142 34.808-41.26 59.428-54.236 24.62-12.998 50.432-22.814 77.378-29.264 26.998-6.408 54.476-9.736 82.476-9.736 55.376 0 103.050 12.47 143.046 37.406 39.906 24.928 59.904 63.422 59.904 115.382 0 10.928-1.522 21.686-4.528 32.19-3.138 10.62-6.24 19.712-9.282 27.26-3.050 7.41-8.858 16.332-17.43 26.616-8.522 10.314-15.046 17.934-19.434 23.004-4.476 5.238-12.852 12.712-25.19 22.594-12.236 9.926-20.048 16.114-23.522 18.402-3.43 2.406-12.332 8.908-26.668 19.456-14.328 10.634-22.184 16.274-23.566 16.94z" /></svg></a></h2>
     <body>
     <div style="font-size:70%; font-family:Times New Roman;"align="justify">
       <p> 2018 </p>
@@ -218,39 +239,48 @@ I want to be able to write the text alongside the videos/images. What happens if
       [<a href="https://github.com/saumya-jetley/cd_Prototypical_Priors_BMVC15">code</a>]
       <br/><br/>
       <p> 2014 </p>
-      <b> 3D Activity Recognition Using Motion History and Binary Shape Templates , </b> 
+      <b> 3D Activity Recognition Using Motion History and Binary Shape Templates, </b> 
       Saumya Jetley, Fabio Cuzzolin,
       <i>Workshop proceedings of the Asian Conference on Computer Vision (ACCV) 2014 </i>
       [<a href="https://link.springer.com/chapter/10.1007/978-3-319-16628-5_10">pdf</a>]
       <br/><br/>
-      <b> Multi-script Identification from Printed Words , </b> 
+      <b> Multi-script Identification from Printed Words, </b> 
       Saumya Jetley, Kapil Mehrotra, Atish Vaze, Swapnil Belhe,
       <i>proceedings of the International conference on Image Analysis and Recognition (ICIAR) 2014 </i>
       [<a href="https://link.springer.com/chapter/10.1007/978-3-319-11758-4_39">pdf</a>]
       <br/>
       <p> 2013 </p>
-      <b> Automatic flag recognition using texture based color analysis and gradient features  , </b> 
+      <b> Automatic flag recognition using texture based color analysis and gradient features , </b> 
       Saumya Jetley, Atish Vaze, Swapnil Belhe,
       <i>Proceedings of the International conference on Image Information Processing (ICIIP) 2013 </i>
       [<a href="https://ieeexplore.ieee.org/abstract/document/6707635/">pdf</a>]
       <br/><br/>
-      <b> Unconstrained handwritten Devanagari character recognition using convolutional neural networks , </b> 
+      <b> Unconstrained handwritten Devanagari character recognition using convolutional neural networks, </b> 
       Kapil Mehrotra, Saumya Jetley, Akash Deshmukh, Swapnil Belhe,
       <i> Proceedings of the 4th International workshop on Multilingual OCR (MOCR) 2013</i>
       [<a href="https://dl.acm.org/citation.cfm?id=2505386">pdf</a>]
       <br/>
       <p> 2012 </p>
-      <a href="https://dl.acm.org/citation.cfm?id=2432556">
-      Hindi handwritten word recognition using HMM and symbol tree 
-      </a><br/> <br/>
-      <a href="http://f4k.dieei.unict.it/proceedings/ICPR2012/media/files/2949.pdf">
-      Two-Stage hybrid binarization around fringe map based text line segmentation for document images 
+       <b> Hindi handwritten word recognition using HMM and symbol tree, </b> 
+      Swapnil Belhe, Chetan Paulzagade, Akash Deshmukh, Saumya Jetley, Kapil Mehrotra,
+      <i> Proceeding of the workshop on Document Analysis and Recognition (DAR) 2012 </i>
+      [<a href="https://dl.acm.org/citation.cfm?id=2432556">pdf</a>]
+      <br/><br/>
+      <b> Two-Stage hybrid binarization around fringe map based text line segmentation for document images, </b> 
+      Saumya Jetley, Swapnil Belhe, V.K. Koppula, Atul Negi, 
+      <i> Proceedings of the 21st International Conference on Pattern Recognition (ICPR) 2012 </i>
+      [<a href="https://ieeexplore.ieee.org/document/6460142/">pdf</a>]
+      <br/><br/>
       </a>
     </div>
+   
+  
+  
     <body>
   </div>
 </header>
 
+</div>
 
 <script>
 
