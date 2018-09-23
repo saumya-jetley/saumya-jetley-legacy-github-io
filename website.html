@@ -1,4 +1,6 @@
-<!-- The following template has been taken from https://www.w3schools.com/w3css/w3css_templates.asp
+<!
+-- The following template has been taken from https://www.w3schools.com/w3css/w3
+  css_templates.asp
 and has been modified for purpose.-->
 
 <!DOCTYPE html>
@@ -11,17 +13,22 @@ and has been modified for purpose.-->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/home/mikesapi/documents/oxweb/website.js"></script>
+
+
 <style>
 .w3-sidebar a {font-family: "Times New Roman", cursive}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
+
 /* unvisited link */
 a:link {
-    color: Black;
+    color: IndianRed;
 }
 /* visited link */
 a:visited {
-    color: Black;
+    color: IndianRed;
 }
 /* mouse over link */
 a:hover {
@@ -31,38 +38,56 @@ a:hover {
 a:active {
     color: Indianred;
 }
+
+
+a.sidemenu {
+    color: black;
+}
+
+a.sidemenu:hover {
+    color: IndianRed;
+}
+
+a.sidemenu.onView {
+    color: Indianred;
+}
+
 </style>
 </head>
-<body class="w3-content" style="max-width:1200px">
+<body class="w3-content" style="max-width:1050px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:320px" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
-    <img src="gitim.jpeg" style="width:70%">
+    <img src="gitim.jpeg" style="width:100%">
     <h3 class="w3-wide" style="font-family:Times New Roman"><b>Saumya Jetley</b></h3>
-    <i>DPhil Student, University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
+    <i>DPhil Student <br /> University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
     <!-- class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> -->
     <br />
     <br />
-    <a href="#about" style="text-decoration:none"><h4 id="Babout" onclick="Babout_col()"><strong>Home</strong></h4></a>
-    <a href="#hobbies" style="text-decoration:none"><h4 id="Bhobbies" onclick="Bhobbies_col()"><strong>Updates</strong></h4></a>
-    <a onclick="myAccFunc()" href="#projects" id="Bprojects" style="text-decoration:none"><h4><strong>Research Projects</strong></h4></a>
+    <h4>
+    <a id="about-side" class="sidemenu" href="#about" style="text-decoration:none" onclick="makeOnView()"><strong>Home</strong></a><br />
+    <a id="hobbies-side" class="sidemenu" href="#hobbies" style="text-decoration:none" onclick="makeOnView()"><strong>Updates</strong></a><br />
+    <a id="projects-side" class="sidemenu" href="#projects" id="Bprojects" style="text-decoration:none" onclick="myAccFunc()"><strong>Research Projects</strong></a><br />
     <!-- <i class="fa fa-caret-down"></i>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes</a>
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes++</a>
       </div>-->
-    <a href="#publ" style="text-decoration:none"><h4 id="Bpubl" onclick="Bpubl_col()"><strong>Publications</strong></h4></a>
+    <a id="publ-side" class="sidemenu" href="#publ" style="text-decoration:none" onclick="makeOnView()"><strong>Publications</strong></a>
+    </h4>
     <br />
+    <h3>
     <a><i class="fa fa-twitter w3-hover-opacity" id="twitter"></i></a>&ensp;
     <a><i class="fa fa-linkedin w3-hover-opacity" id="linkedin"></i></a>&ensp;
     <a><i class="fa fa-github w3-hover-opacity" id="linkedin"></i></a>&ensp;
+    </h3>
   </div>
  </nav>
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:320px">
+<div class="w3-main" style="margin-left:240px">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
@@ -71,41 +96,51 @@ a:active {
 <!-- -------Home------- -->
 
   <!-- Image header -->
-  <Header class="w3-container w3-xlarge" id="about">
-    <h1 style="font-size:75%; font-family:Times New Roman;" align="center"><strong> <br />PhD student under Prof. Philip Torr <br /> Torr Vision Group, Department of Engineering Science, University of Oxford</strong>
+  <Header class="w3-container w3-xlarge sidemenu-link" id="about">
+    <h1 style="font-size:75%; font-family:Times New Roman;" align="center"><strong> 
+    <br/>I am a final year PhD student under <a href=http://www.robots.ox.ac.uk/~phst/ style="text-decoration:none">Prof. Philip Torr</a> 
+    <br/>generously funded by the competitive <a href=https://epsrc.ukri.org/skills/students/ style="text-decoration:none">EPSRC research scholarship</a>
+    <br/>to pursue my PhD in AI for scene understanding at the University of Oxford.
+</strong>
   </h1>
   </Header>
 
 
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <hr style="width:850px">
-    <p style="font-size:75%; font-family:Times New Roman;" align="justify"> My research interests lie in the area of artificial intelligence for visual perception. Towards this, my recent work lies in the area of representation learning for scene understanding tasks using deep convolutional neural networks (DCNs). The focus of the work has been threefold: 
-    <ul  style="font-size:65%; font-family:Times New Roman;" align="justify">
-      <li> Systematic changes to the network architecture and loss function design to incorporate prior/contextual knowledge for improving performance at scene understanding tasks; </li>
+    <!--<hr style="width:800px">-->
+    <p style="font-size:75%; font-family:Times New Roman;" align="justify"> 
+    My research covers the broad themes of computer vision, machine learning and deep learning. More fine-grained topics include applied computer vision (for saliency estimation, object recognition, instance segmentation), attention modelling in deep neural nets, analysis of adversariality in deep neural nets.    
+    <!--The focus of the work has been threefold: 
+    <ul  style="font-size:67%; font-family:Times New Roman" align="justify">
+      <li> Systematic changes to the network architecture and loss function design to incorporate prior/contextual 
+       knowledge for improving performance at scene understanding tasks; </li>
       <li> Attention modelling for improving interpretability and performance of DCNs; </li>
-      <li> Geometrical analysis of DCN decision boundaries to characterise their behaviour and explain their adversarial vulnerability.</li></ul>
+      <li> Geometrical analysis of DCN decision boundaries to characterise their behaviour and explain 
+      their adversarial vulnerability.</li></ul>-->
     </p>
-  <br />
   </header>
 
   <header class="w3-container w3-xlarge">
-    <div id="hobbies"></div>
+    <div id="hobbies" class="sidemenu-link"></div>
     <hr style="width:800px">
-    <h3 style="font-size:75%; font-family:Times New Roman;" align="justify">-- Recent Updates --</h3>
-    <p><ul style="font-size:65%; font-family:Times New Roman;">
-      <li>I presented my work on attention modelling in deep convolutional networks for classification at ICLR 2018.</li>
-      <li>Received the St. Cross College research scholarship and ICLR 2018 travel award to attend ICLR in Vancouver this year.</li>
-      <li>I organised a super exciting coding workshop for middle and high school students at the Hay Festival, more details here. </li>
-      <li>Volunteered </li>
-    </ul></p>
-  <br />
+    <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Updates </strong></h2>
+    <p style="font-size:67%; font-family:Times New Roman;">
+    09/18: Our paper explaining adversarial vulnerability in deep neural nets got accepted at NIPS'18.<br />
+    08/18: I am co-organising the 'Frontiers of Computer Vision' track at the Indaba'18.<br />
+    06/18: I will be the outreach officer with OxWoCS for the academic year 2018-19. Our relationship history here.<br />
+    05/18: I am co-organising a coding workshop at the Hay Science Festival. More details here.<br />
+    05/18: I am presenting my work at ICLR'18. Some highlights here.<br />
+    04/18: Grateful to be receiving <a href=https://www.stx.ox.ac.uk/about-st-cross>St. Cross</a> travel and research scholarship.<br />
+    03/18: Grateful to be receiving the ICLR'18 travel award.<br />
+    01/18: Our paper on learning attention in classification CNNs is accepted at ICLR'18. <br/>
+    </p>
   </header>
 
   <header class="w3-container w3-xlarge">
-    <div id="projects"></div>
+    <div id="projects" class="sidemenu-link"></div>
     <hr style="width:800px">
-    <h3 style="font-size:75%; font-family:Times New Roman;" align="justify">-- Research Projects --</h3>
+    <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Research Projects </strong></h2>
     <br />
     <iframe width="300" height="220" align="left"  src="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-right:25px"></iframe>
     <h3 style="font-size:85%; font-family:Times New Roman;" align="justify">Straight to Shapes</h3>
@@ -138,8 +173,10 @@ I want to be able to write the text alongside the videos/images. What happens if
 
 
  <header class="w3-container w3-xlarge" >
-  <div class="w3-left" id="publ" >
+  <div class="w3-left sidemenu-link" id="publ" >
+    <br />
     <hr style="width:800px">
+    <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Publications </strong></h2>
     <body>
     <div style="font-size:70%; font-family:Times New Roman;"align="justify">
       <p> 2018 </p>
@@ -216,14 +253,8 @@ I want to be able to write the text alongside the videos/images. What happens if
 
 
 <script>
-// Accordion 
-function Babout_col() {
-    document.getElementById("Babout").style.color="IndianRed";
-    document.getElementById("Bprojects").style.color="black";
-    document.getElementById("Bhobbies").style.color="black";
-    document.getElementById("Bpubl").style.color="black";
-}
 
+// Accordion 
 function myAccFunc() {
     var x = document.getElementById("demoAcc");
     if (x.className.indexOf("w3-show") == -1) {
@@ -231,18 +262,12 @@ function myAccFunc() {
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
-    document.getElementById("Babout").style.color="Black";
-    document.getElementById("Bprojects").style.color="IndianRed";
-    document.getElementById("Bhobbies").style.color="Black";
-    document.getElementById("Bpubl").style.color="Black";
+    $(this).makeOnView();
 }
 
-
-function Bpubl_col() {
-    document.getElementById("Babout").style.color="Black";
-    document.getElementById("Bprojects").style.color="Black";
-    document.getElementById("Bhobbies").style.color="Black";
-    document.getElementById("Bpubl").style.color="IndianRed";
+function makeOnView() {
+   	$('a.sidemenu').removeClass('onView');
+   	$(this).addClass('onView');
 }
 
 </script>
