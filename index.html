@@ -22,6 +22,13 @@ and has been modified for purpose.-->
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
 
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* unvisited link */
 a:link {
     color: IndianRed;
@@ -54,27 +61,30 @@ a.sidemenu.onView {
 
 </style>
 </head>
-<body class="w3-content" style="max-width:1050px">
+<body class="w3-content" style="max-width:900px">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">
+<!--<nav class="w3-bar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">-->
+<div class="navbar w3-bar w3-white">
   <div class="w3-container w3-display-container w3-padding-16">
-    <img src="gitim.jpeg" style="width:100%">
-    <h3 class="w3-wide" style="font-family:Times New Roman"><b>Saumya Jetley</b></h3>
+    <img src="gitim.jpeg" style="width:10%">
+<!-- Insert a Table here (SJ) -->
+    <b>Saumya Jetley</b>
     <i>DPhil Student <br /> University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
     <!-- class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> -->
     <br />
     <br />
     <h4>
-    <a id="about-side" class="sidemenu" href="#about" style="text-decoration:none" onclick="makeOnView()"><strong>Home</strong></a><br />
-    <a id="updates-side" class="sidemenu" href="#updates" style="text-decoration:none" onclick="makeOnView()"><strong>Updates</strong></a><br />
-    <a id="projects-side" class="sidemenu" href="#projects" id="Bprojects" style="text-decoration:none" onclick="myAccFunc()"><strong>Research Projects</strong></a><br />
+<!-- arrange them horizontally but with gaps (SJ) -->
+    <a id="about-side" class="sidemenu" href="#about" style="text-decoration:none" onclick="makeOnView()"><strong>Home</strong></a>
+    <a id="updates-side" class="sidemenu" href="#updates" style="text-decoration:none" onclick="makeOnView()"><strong>Updates</strong></a>
+    <a id="projects-side" class="sidemenu" href="#projects" id="Bprojects" style="text-decoration:none" onclick="myAccFunc()"><strong>Research Projects</strong></a>
     <!-- <i class="fa fa-caret-down"></i>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes</a>
       <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes++</a>
       </div>-->
-    <a id="data-side" class="sidemenu" href="#data" style="text-decoration:none" onclick="makeOnView()"><strong>Datasets</strong></a><br />
+    <a id="data-side" class="sidemenu" href="#data" style="text-decoration:none" onclick="makeOnView()"><strong>Datasets</strong></a>
     <a id="publ-side" class="sidemenu" href="#publ" style="text-decoration:none" onclick="makeOnView()"><strong>Publications</strong></a>
 
     </h4>
@@ -85,11 +95,12 @@ a.sidemenu.onView {
     <a><i class="fa fa-github w3-hover-opacity" id="linkedin"></i></a>&ensp;
     </h3>
   </div>
- </nav>
+</div>
+<!-- </nav>-->
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:150px">
+<div class="w3-main" style="margin-top:300px">
 
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
