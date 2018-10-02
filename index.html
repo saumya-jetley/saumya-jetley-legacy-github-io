@@ -30,9 +30,8 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
 .navbar {
   overflow: hidden;
-  position: fixed;
+  position: relative;
   top: 0;
-  width: 100%;
 }
 
 /* unvisited link */
@@ -67,11 +66,11 @@ a.sidemenu.onView {
 
 </style>
 </head>
-<body class="w3-content" style="max-width:1000px">
+<body class="w3-content" style="max-width:50%">
 
 <!-- Sidebar/menu -->
 <!--<nav class="w3-bar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">-->
-<div class="navbar w3-bar w3-white" style="max-width:1000px">
+<div class="navbar w3-bar w3-white" style="max-width:100%">
   <!--<div class="w3-container w3-display-container w3-padding-16">-->
     <h5><b>Saumya Jetley</b><br />
     <i>DPhil Student, University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
@@ -104,10 +103,10 @@ a.sidemenu.onView {
 
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-top:210px">
+  <div class="navbar" style="max-width:100%">
 
   <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
+  <!--<div class="w3-hide-large" style="margin-top:83px"></div>-->
   
 
 <!-- -------Home------- -->
@@ -116,7 +115,7 @@ a.sidemenu.onView {
   <span class="sidemenu-link" id="about"></span>
   <header class="w3-container w3-xlarge">
     <h1 style="font-size:75%;font-family:Times New Roman;" align="center"><strong>
-    <img src="gitim.jpeg" style="width:20%"><br/>
+    <img src="gitim.jpeg" style="width:10%"><br/>
     <br/>I am a final year PhD student under <a href=http://www.robots.ox.ac.uk/~phst/ style="text-decoration:none">Prof. Philip Torr</a> 
     <br/>generously funded by the <a href=https://epsrc.ukri.org/skills/students/ style="text-decoration:none">EPSRC research scholarship</a> to pursue
     <br/>research in 'AI for scene understanding' at the University of Oxford.
@@ -231,9 +230,8 @@ In this work, we propose to directly regress to objects' shapes in addition to t
       <h2 style="font-size:90%; font-family:Times New Roman;" align="justify"><strong> Datasets </strong></h2>
       <p style="font-size:70%; font-family:Times New Roman;">
       Long long time ago, I gathered a dataset of 'Country Flags in the Wild'. It comprises of
-      12,854 train images and 6,110 test images of the flags of 224 countries obtained from the images on world wide web and cropped manually to 
-      loosely fit to the flag. More details can be found in the <a href="https://ieeexplore.ieee.org/abstract/document/6707635">paper</a>. 
-      It can downloaded from <a href="/data/tvg/sjetley/">here</a> by submitting this copyright form to my email address and receiving the passkey.
+      12,854 train images and 6,110 test images of the flags of 224 different countries harvested from the world wide web and manually cropped to loosely fit to the inlying flags. More details can be found in this <a href="https://ieeexplore.ieee.org/abstract/document/6707635">paper</a>. 
+      The dataset itself can be downloaded from <a href="/data/tvg/sjetley/">here</a>.
       </p>
    </header>
    
@@ -337,7 +335,7 @@ In this work, we propose to directly regress to objects' shapes in addition to t
     </div>
 
 
-
+</div>
 </body>
 
 
