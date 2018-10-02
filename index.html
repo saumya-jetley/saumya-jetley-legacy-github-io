@@ -28,7 +28,13 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
   visibility: hidden;
 }
 
-.navbar {
+.navbar1 {
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  opacity:1;
+}
+.navbar2 {
   overflow: hidden;
   position: relative;
   top: 0;
@@ -66,13 +72,13 @@ a.sidemenu.onView {
 
 </style>
 </head>
-<body class="w3-content" style="max-width:65%">
+<body class="w3-content" style="max-width:68vw">
 
 <!-- Sidebar/menu -->
 <!--<nav class="w3-bar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">-->
-<div class="navbar w3-bar w3-white" style="max-width:100%;">
+<div class="navbar1 w3-bar w3-white" style="max-width:100vw;">
   <!--<div class="w3-container w3-display-container w3-padding-16">-->
-    <h5><b>Saumya Jetley</b><br />
+    <h5 style="font-size:1.5vw"><b>Saumya Jetley</b><br />
     <i>DPhil Student, University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
     <span style="float:right;">
     <a href="https://twitter.com/saumyajetley"><i class="fa fa-twitter w3-hover-opacity" id="twitter"></i></a>&ensp;&ensp;
@@ -81,17 +87,12 @@ a.sidemenu.onView {
     </span>
     </h5>
     
-    <h4>
+    <h4 style="font-size:1.5vw">
     <hr style="width:800px">
 <!-- arrange them horizontally but with gaps (SJ) -->
     <a id="about-side" class="sidemenu" href="#about" style="text-decoration:none;" onclick="makeOnView()"><strong>Home</strong></a>&emsp;&emsp;
     <a id="updates-side" class="sidemenu" href="#updates" style="text-decoration:none" onclick="makeOnView()"><strong>Updates</strong></a>&emsp;&emsp;
-    <a id="projects-side" class="sidemenu" href="#projects" id="Bprojects" style="text-decoration:none" onclick="myAccFunc()"><strong>Research Projects</strong></a>&emsp;&emsp;
-    <!-- <i class="fa fa-caret-down"></i>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-      <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes</a>
-      <a href="#projects" class="w3-bar-item w3-button">Straight to Shapes++</a>
-      </div>-->
+    <a id="projects-side" class="sidemenu" href="#projects" id="Bprojects" style="text-decoration:none"><strong>Research Projects</strong></a>&emsp;&emsp;
     <a id="data-side" class="sidemenu" href="#data" style="text-decoration:none" onclick="makeOnView()"><strong>Datasets</strong></a>&emsp;&emsp;
     <a id="teach-side" class="sidemenu" href="#teach" style="text-decoration:none" onclick="makeOnView()"><strong>Teaching</strong></a>&emsp;&emsp;
     <a id="publ-side" class="sidemenu" href="#publ" style="text-decoration:none" onclick="makeOnView()"><strong>Publications</strong></a>
@@ -103,7 +104,7 @@ a.sidemenu.onView {
 
 
 <!-- !PAGE CONTENT! -->
-  <div class="navbar" style="max-width:100%">
+  <div class="navbar2" style="max-width:100vw;margin-top:15vw">
 
   <!-- Push down content on small screens -->
   <!--<div class="w3-hide-large" style="margin-top:83px"></div>-->
@@ -342,15 +343,6 @@ In this work, we propose to directly regress to objects' shapes in addition to t
 <script>
 
 // Accordion 
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-    $(this).makeOnView();
-}
 
 function makeOnView() {
    	$('a.sidemenu').removeClass('onView');
