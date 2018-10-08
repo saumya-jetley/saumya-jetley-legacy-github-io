@@ -23,17 +23,14 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
 .sidemenu-link{
   display: block;
-  height: 200px; /*same height as header*/
-  margin-top: -200px; /*same height as header*/
   visibility: hidden;
 }
 
 .navbar1 {
-  overflow: hidden;
-  position: sticky;
+  position: absolute;
   top: 0;
-  opacity:1;
 }
+
 .navbar2 {
   overflow: hidden;
   position: relative;
@@ -116,7 +113,7 @@ a.sidemenu.onView {
   <span class="sidemenu-link" id="about"></span>
   <header class="w3-container w3-xlarge">
     <h1 style="font-size:1.5vw;font-family:Times New Roman;" align="center"><strong>
-    <img src="gitim.jpeg" style="width:10vw"><br/>
+    <img src="gitim.jpeg" style="width:13%"><br/>
     <br/>I am a final year PhD student under <a href=http://www.robots.ox.ac.uk/~phst/ style="text-decoration:none">Prof. Philip Torr</a> 
     <br/>generously funded by the <a href=https://epsrc.ukri.org/skills/students/ style="text-decoration:none">EPSRC research scholarship</a> to pursue
     <br/>research in 'AI for scene understanding' at the University of Oxford.
@@ -168,7 +165,7 @@ a.sidemenu.onView {
     <hr style="width:800px">
     <h2 style="font-size:1.5vw; font-family:Times New Roman;" align="justify"><strong> Research Projects </strong></h2>
     <br />
-    <img src="./projects/traces-1.png" width="440vw" height="220vw" align="left"  style="margin-right:30px">
+    <img src="./projects/traces-1.png" width="40%" align="left"  style="margin-right:30px">
     <h3 style="font-size:1.5vw; font-family:Times New Roman;" align="center">Explaining Adversariality in Deep Nets</h3>
     <p style="font-size:1.2vw; font-family:Times New Roman;" align="justify"> 
 The vulnerability of deep image classification networks to adversarial attack is now well known, but less well understood. Via a novel experimental analysis, we illustrate some facts about deep convolutional networks (DCNs) that shed new light on their behaviour and how it connects to the problem of adversaries.
@@ -181,7 +178,7 @@ The second is a clear demonstration of the tight coupling between classification
 
   <header class="w3-container w3-xlarge">
   <br /><br />
-    <img src="./projects/multi_level_attention-1.png" width="450vw" height="230vw" align="left" style="margin-right:30px">
+    <img src="./projects/multi_level_attention-1.png" width="40%" align="left" style="margin-right:30px">
     <h3 style="font-size:1.5vw; font-family:Times New Roman;" align="center">Learning to Pay Attention</h3>
     <p style="font-size:1.2vw; font-family:Times New Roman;" align="justify"> 
 We propose an end-to-end-trainable attention module for convolutional neural network (CNN) architectures for image classification.  The module takes as input the 2D feature vector maps which form the intermediate representations of the input image at different stages in the CNN pipeline, and outputs a 2D matrix of scores for each map. Standard CNN architectures are trained under the constraint that a convex combination of the intermediate 2D feature vectors, as parameterised by the score matrices, must alone be used for classification. Our experimental observations provide clear evidence to the effect that the learned scores simulate 'attention'by amplifying the relevant and suppressing the irrelevant or misleading regions of the input image. Thus, the proposed function is able to bootstrap standard CNN architectures for the task of image classification and demonstrate superior generalisation. 
@@ -191,8 +188,7 @@ We propose an end-to-end-trainable attention module for convolutional neural net
 
   <header class="w3-container w3-xlarge">
     <br /><br />
-    <iframe width="450vw" height="250vw" align="left"  src="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-right:25px">
-    </iframe>
+    <iframe width="35%" align="left"  src="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-right:25px"></iframe>
     <h3 style="font-size:1.5vw; font-family:Times New Roman;" align="center">Realtime Instance Segmentation</h3>
     <p style="font-size:1.2vw; font-family:Times New Roman;" align="justify"> 
 In this work, we propose to directly regress to objects' shapes in addition to the object bounding boxes and categories. It is crucial to find an appropriate shape representation that is compact and decodable, and in which objects can be compared for higher-order concepts such as view similarity, pose variation and occlusion. To achieve this, we use a denoising convolutional auto-encoder to establish an embedding space, and place the decoder after a fast end-to-end network trained to regress directly to the encoded shape vectors. This yields what to the best of our knowledge is the first real-time shape prediction network, running at ~35 FPS on a high-end desktop, that additionally generalises to unseen categories. 
@@ -203,8 +199,7 @@ In this work, we propose to directly regress to objects' shapes in addition to t
   
     <header class="w3-container w3-xlarge">
     <br /><br />
-    <img src="./projects/saliency-estimation.png" width="450vw" height="280vw" align="left" style="margin-right:30px">
-    </iframe>
+    <img src="./projects/saliency-estimation.png" width="38%" align="left" style="margin-right:30px">
     <h3 style="font-size:1.5vw; font-family:Times New Roman;" align="center">Human Saliency Estimation</h3>
     <p style="font-size:1.2vw; font-family:Times New Roman;" align="justify"> 
  In this work, we introduce a new saliency map model which formulates a map as a generalized Bernoulli distribution. We then train a deep architecture to predict such maps using novel loss functions which pair the softmax activation function with measures designed to compute distances between probability distributions. We show in extensive experiments the effectiveness of such loss functions over standard ones on four public benchmark datasets, and demonstrate improved performance over state-of-the-art saliency methods.
@@ -215,8 +210,7 @@ In this work, we propose to directly regress to objects' shapes in addition to t
   
     <header class="w3-container w3-xlarge">
     <br /><br />
-    <img src="./projects/prototypical_priors-1.png" width="450vw" height="220vwv" align="left" style="margin-right:30px">
-    </iframe>
+    <img src="./projects/prototypical_priors-1.png" width="45%" align="left" style="margin-right:30px">
     <h3 style="font-size:1.5vw; font-family:Times New Roman;" align="center">Leveraging Prototypical Priors</h3>
     <p style="font-size:1.2vw; font-family:Times New Roman;" align="justify"> 
     Recent works on zero-shot learning make use of side information such as visual attributes or natural language semantics to define the relations between output visual classes and then use these relationships to draw inference on new unseen classes at test time. In a novel extension to this idea, we propose the use of visual prototypical concepts as side information. For most real-world visual object categories, it may be difficult to establish a unique prototype. However, in cases such as traffic signs, brand logos, flags, and even natural language characters, these prototypical templates are available and can be leveraged for an improved recognition performance. Using prototypes as prior information, the deepnet pipeline learns the input image projections into the prototypical embedding space subject to minimization of the final classification loss. Based on our experiments, prototypical embeddings incorporated in a conventional convolutional neural network improve the recognition performance. The same system can be directly deployed to draw inference on unseen classes by simply adding the prototypical information for these new classes at test time.
