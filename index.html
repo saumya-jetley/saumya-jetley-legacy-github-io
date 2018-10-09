@@ -21,23 +21,38 @@ and has been modified for purpose.-->
 .w3-sidebar a {font-family: "Times New Roman", cursive}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
+.navbar {
+position: relative;
+height: 100vh
+}
+
 .navbar1 {
   position: fixed;
+  overflow:hidden;
   top: 0;
-  margin-left: 17vw
+  left: 17vw;
+  height:20vh
 }
 
 .navbar2 {
   position: relative;
-  margin-left: 17vw;
-  margin-top: 20vw;
+  left: 17vw;
+  overflow: auto;
+  top:20vh;
+  height: 80vh;
+}
+
+.navbar2 {
+    -ms-overflow-style: none;  //IE10+
+    overflow: -moz-scrollbars-none;  // Firefox
+}
+.navbar2::-webkit-scrollbar { 
+    display: none;  // Safari and Chrome
 }
 
 .sidemenu-link{
   display: block;
   visibility: hidden;
-  position: absolute;
-  margin-top: -18vw;
 }
 
 /* unvisited link */
@@ -72,10 +87,11 @@ a.sidemenu.onView {
 </style>
 </head>
 
-<body>
+<body scroll="no" style="overflow: hidden">
 <!-- Sidebar/menu -->
 <!--<nav class="w3-bar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">-->
-<div class="navbar1 w3-bar w3-white" style="max-width:65vw; z-index: 1">
+<div class = navbar>
+<div class="navbar1 w3-bar w3-white" style="max-width:68vw; z-index: 1">
   <!--<div class="w3-container w3-display-container w3-padding-16">-->
     <h5 style="font-size:1.5vw"><b>Saumya Jetley</b><br />
     <i>DPhil Student, University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
@@ -103,7 +119,7 @@ a.sidemenu.onView {
 
 
 <!-- !PAGE CONTENT! -->
-  <div class="navbar2" style="max-width:65vw; z-index: 0">
+  <div class="navbar2" style="max-width:68vw; z-index: 0">
   <!-- Push down content on small screens -->
   <!--<div class="w3-hide-large" style="margin-top:83px"></div>-->
   
@@ -335,7 +351,7 @@ In this work, we propose to directly regress to objects' shapes in addition to t
       <br/><br/>
     </div>
 
-
+</div>
 </div>
 </body>
 
