@@ -21,20 +21,23 @@ and has been modified for purpose.-->
 .w3-sidebar a {font-family: "Times New Roman", cursive}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
 
-.sidemenu-link{
-  display: block;
-  visibility: hidden;
-}
-
 .navbar1 {
-  position: absolute;
+  position: fixed;
   top: 0;
+  margin-left: 17vw
 }
 
 .navbar2 {
-  overflow: hidden;
   position: relative;
-  top: 0;
+  margin-left: 17vw;
+  margin-top: 20vw;
+}
+
+.sidemenu-link{
+  display: block;
+  visibility: hidden;
+  position: absolute;
+  margin-top: -20vw;
 }
 
 /* unvisited link */
@@ -66,14 +69,13 @@ a.sidemenu:hover {
 a.sidemenu.onView {
     color: Indianred;
 }
-
 </style>
 </head>
-<body class="w3-content" style="max-width:68vw">
 
+<body>
 <!-- Sidebar/menu -->
 <!--<nav class="w3-bar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:235px;margin-left:-100px" id="mySidebar">-->
-<div class="navbar1 w3-bar w3-white" style="max-width:100vw;">
+<div class="navbar1 w3-bar w3-white" style="max-width:65vw; z-index: 1">
   <!--<div class="w3-container w3-display-container w3-padding-16">-->
     <h5 style="font-size:1.5vw"><b>Saumya Jetley</b><br />
     <i>DPhil Student, University of Oxford</i><br /><i>Email:<a href="mailto:sjetley@robots.ox.ac.uk"> sjetley@robots.ox.ac.uk</i></a>
@@ -101,12 +103,10 @@ a.sidemenu.onView {
 
 
 <!-- !PAGE CONTENT! -->
-  <div class="navbar2" style="max-width:100vw;margin-top:15vw">
-
+  <div class="navbar2" style="max-width:65vw; z-index: 0">
   <!-- Push down content on small screens -->
   <!--<div class="w3-hide-large" style="margin-top:83px"></div>-->
   
-
 <!-- -------Home------- -->
 
   <!-- Image header -->
@@ -155,7 +155,6 @@ a.sidemenu.onView {
     03/18: Grateful to be receiving the ICLR'18 travel award.<br />
     01/18: Our paper on learning attention in classification CNNs is accepted at ICLR'18. 
     (<a href="https://openreview.net/forum?id=HyzbhfWRW"> Learn to pay attention!</a>) <br/>
-    <br/>
     <a href='./news/about.html'>Older news</a>
     </p>
   </header>

@@ -7,7 +7,7 @@ $(document).ready(function() {
   $(sections).each(function(){ 
     var divPosition = $(this).offset().top;
     //the -1 is so that it includes the div 1px before the div leave the top of the window.
-    if( x > divPosition + 1 ){
+    if( x > divPosition + (document.documentElement.clientWidth)/500 ){
       currentSection = $(this);
     }
             
@@ -25,7 +25,7 @@ $(document).ready(function() {
     $(sections).each(function(){ 
       var divPosition = $(this).offset().top;
       //the -1 is so that it includes the div 1px before the div leave the top of the window.
-      if( divPosition - 1 < currentScroll ){
+      if( divPosition - (document.documentElement.clientWidth)/500 < currentScroll ){
         currentSection = $(this);
       }
             
