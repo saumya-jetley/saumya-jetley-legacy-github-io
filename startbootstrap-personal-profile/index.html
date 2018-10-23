@@ -112,7 +112,7 @@
 
     06/18: I will be the <a href="https://www.cs.ox.ac.uk/societies/women/committee.html">outreach officer</a>
     with <a href="https://www.cs.ox.ac.uk/societies/women/">OxWoCS</a> 
-    for the academic year 2018-19. Our relationship history <a href="./news/oxwocs.html">here</a>.<br />
+    for the academic year 2018-19. Our relationship history <a href="./news/oxwocs.html">here</a>!<br />
 
     05/18: I am co-organising a <a href = "https://www.hayfestival.com/p-13591-bushra-alahmadi-klaudia-krawiecka-saumya-jetley.aspx">coding workshop</a>
      at the <a href="http://www.hayfestival.com/wales/home">Hay Science Festival</a>.<br />
@@ -141,14 +141,50 @@
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
 
-    
-    <h6 class="mb-5">Explaining Adversariality in Deep Nets</h6>
+<ul>
+    <li><h6 class="mb-5">Explaining Adversariality in Deep Nets</h6><il>
     <img src="./projects/traces-1.png" width="50%">
     <p class="lead"> <br/> The vulnerability of deep image classification networks to adversarial attack is now well known, but less well understood. Via a novel experimental analysis, we illustrate some facts about deep convolutional networks (DCNs) that shed new light on their behaviour and how it connects to the problem of adversaries.
 In short, the celebrated performance of DCNs and their vulnerability to adversarial attack are simply two sides of the same coin: the input image-space directions along which the networks are most vulnerable to attack are the same directions which they leverage to achieve their classification performance in the first place.
 We develop this result in two main steps. The first involves connecting universal adversarial perturbations to specific target classes by examining the properties of class-score outputs of nets as functions of 1D movements along specific directions in the input image space.
 The second is a clear demonstration of the tight coupling between classification performance and vulnerability to adversarial attack within the spaces spanned by these directions.
-    </p>
+<br/> [<a href="https://arxiv.org/abs/1807.04200">details</a>]
+      [<a >code:forthcoming</a>]
+      [<a >demo:forthcoming</a>]
+    </p><h6 class="mb-5"></h6>
+
+    <li><h6 class="mb-5">Learning to Pay Attention</h6><il>
+    <img src="./projects/multi_level_attention-1.png" width="50%">
+    <p class="lead"> <br/> We propose an end-to-end-trainable attention module for convolutional neural network (CNN) architectures for image classification.  The module takes as input the 2D feature vector maps which form the intermediate representations of the input image at different stages in the CNN pipeline, and outputs a 2D matrix of scores for each map. Standard CNN architectures are trained under the constraint that a convex combination of the intermediate 2D feature vectors, as parameterised by the score matrices, must alone be used for classification. Our experimental observations provide clear evidence to the effect that the learned scores simulate 'attention'by amplifying the relevant and suppressing the irrelevant or misleading regions of the input image. Thus, the proposed function is able to bootstrap standard CNN architectures for the task of image classification and demonstrate superior generalisation.
+<br/> [<a href="https://openreview.net/forum?id=HyzbhfWRW">details</a>]
+      [<a href="https://github.com/saumya-jetley/cd_ICLR18_ActiveAttention">code</a>]
+      [<a >demo:forthcoming</a>]
+    </p><h6 class="mb-5"></h6>
+
+    <li><h6 class="mb-5">Realtime Instance Segmentation</h6><il>
+    <img src="./projects/straight_to-shapes.png" width="50%">
+    <p class="lead"> <br/> In this work, we propose to directly regress to objects' shapes in addition to the object bounding boxes and categories. It is crucial to find an appropriate shape representation that is compact and decodable, and in which objects can be compared for higher-order concepts such as view similarity, pose variation and occlusion. To achieve this, we use a denoising convolutional auto-encoder to establish an embedding space, and place the decoder after a fast end-to-end network trained to regress directly to the encoded shape vectors. This yields what to the best of our knowledge is the first real-time shape prediction network, running at ~35 FPS on a high-end desktop, that additionally generalises to unseen categories. 
+<br/> [<a href="https://arxiv.org/abs/1611.07932">details</a>]
+      [<a href="https://github.com/torrvision/straighttoshapes">code</a>]
+      [<a href="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1">demo</a>]
+    </p><h6 class="mb-5"></h6>
+
+    <li><h6 class="mb-5">Human Saliency Estimation</h6><il>
+    <img src="./projects/saliency-estimation.png" width="50%">
+    <p class="lead"> <br/>  In this work, we introduce a new saliency map model which formulates a map as a generalized Bernoulli distribution. We then train a deep architecture to predict such maps using novel loss functions which pair the softmax activation function with measures designed to compute distances between probability distributions. We show in extensive experiments the effectiveness of such loss functions over standard ones on four public benchmark datasets, and demonstrate improved performance over state-of-the-art saliency methods. 
+<br/> [<a href="https://ieeexplore.ieee.org/document/7780989">details</a>]
+      [<a href="https://github.com/saumya-jetley/cd_Saliency_PDP">code</a>]
+      [<a >demo:forthcoming</a>]
+    </p><h6 class="mb-5"></h6>
+
+    <li><h6 class="mb-5">Leveraging Prototypical Priors</h6><il>
+    <img src="./projects/prototypical_priors-1.png" width="50%">
+    <p class="lead"> <br/> Recent works on zero-shot learning make use of side information such as visual attributes or natural language semantics to define the relations between output visual classes and then use these relationships to draw inference on new unseen classes at test time. In a novel extension to this idea, we propose the use of visual prototypical concepts as side information. For most real-world visual object categories, it may be difficult to establish a unique prototype. However, in cases such as traffic signs, brand logos, flags, and even natural language characters, these prototypical templates are available and can be leveraged for an improved recognition performance. Using prototypes as prior information, the deepnet pipeline learns the input image projections into the prototypical embedding space subject to minimization of the final classification loss. Based on our experiments, prototypical embeddings incorporated in a conventional convolutional neural network improve the recognition performance. The same system can be directly deployed to draw inference on unseen classes by simply adding the prototypical information for these new classes at test time.
+<br/> [<a href="https://arxiv.org/abs/1512.01192">details</a>]
+      [<a href="https://github.com/saumya-jetley/cd_Prototypical_Priors_BMVC15">code</a>]
+      [<a >demo:forthcoming</a>]<br/><br/></p><h6 class="mb-5"></h6>
+
+</ul>
 
         </div>
       </section>
