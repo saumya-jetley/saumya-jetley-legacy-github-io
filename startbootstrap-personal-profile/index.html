@@ -167,10 +167,16 @@ Such energy, great leadership, AI for social good in Indian space, ftw!
     <li><h5 class="mb-5">With Friends Like These, Who Needs Adversaries?</h5>
     <il>
     <img src="./projects/traces-1.png" width="50%">
-    <p class="lead"> <br/> The vulnerability of deep image classification networks to adversarial attack is now well known, but less well understood. Via a novel experimental analysis, we illustrate some facts about deep convolutional networks (DCNs) that shed new light on their behaviour and how it connects to the problem of adversaries.
-In short, the celebrated performance of DCNs and their vulnerability to adversarial attack are simply two sides of the same coin: the input image-space directions along which the networks are most vulnerable to attack are the same directions which they leverage to achieve their classification performance in the first place.
-We develop this result in two main steps. The first involves connecting universal adversarial perturbations to specific target classes by examining the properties of class-score outputs of nets as functions of 1D movements along specific directions in the input image space.
-The second is a clear demonstration of the tight coupling between classification performance and vulnerability to adversarial attack within the spaces spanned by these directions.
+    <p class="lead"> <br/> 
+This work performs a principled analysis of the class decision functions learned by classification CNNs by contextualising an existing geometrical framework for network decision boundary analysis. 
+Our research uncovers some very intriguing yet simplistic facets of the class score functions learned by these networks that explain their adversarial vulnerability.
+We identify the fact that specific input image space directions tend to be associated with fixed class identities. 
+This means that simply increasing the magnitude of correlation between the input image and a single image space direction causes the nets to believe that more (or less) of the class is present. 
+This allows us to provide a new perspective on the existence of universal adversarial perturbations.
+Further, the input image space directions which the networks use to achieve their classification performance are the same along which the networks are most vulnerable to attack; the vulnerability arises from the rather simplistic non-linear use of the directions. Thus, as it stands, the performance and vulnerability of these nets are closely entwined.
+Various notable observations emerge from this, one of which is that any attempt to make a trained network more robust to an adversarial attack by suppressing input data dimensions or intermediate network features would always be accompanied by a corresponding loss in network accuracy. 
+Moreover, if the attack is optimised to take into account the suppression of dimensions, it regains its effectiveness.
+These results present key implications for future efforts to construct neural nets that are both accurate and robust to adversarial attack.
 <br/> [<a href="https://arxiv.org/abs/1807.04200">paper</a>]
       [<a >code</a>]
       [<a href="https://www.youtube.com/watch?v=hOQdyInhYi0">video</a>]
@@ -344,6 +350,8 @@ The second is a clear demonstration of the tight coupling between classification
 <br/>
 07/17: Invited student talk on <i>real-time instance segmentation in action</i> at the Cambridge office of <a href="https://five.ai/">FiveAI</a>. Slides <a href="https://drive.google.com/file/d/1X_lZU-IkT2bdjyZ4QojfeGvodX_Tavde/view?usp=sharing">here</a>, Demo on one of the slides <a href="https://www.youtube.com/watch?v=zWZowrpaZ1c">here</a>.
 <br/>
+06/17: Gave a demo of our instance segmentation technology at the <a href="http://www.spacestudios.org.uk/art-technology/reconfigured-vision-workshop/">Reconfigured Vision Workshop</a> in London.
+<br/>
 03/17: Invited student talk on <i>real-time instance segmentation in action</i> at the <a href="http://workshops.inf.ed.ac.uk/deep/deep2017/">Deep Learning Workshop'17</a> in Edinburgh. <a href="https://www.youtube.com/watch?v=sTCY4JWPI4I">Recording</a>, <a href="https://drive.google.com/file/d/1X_lZU-IkT2bdjyZ4QojfeGvodX_Tavde/view?usp=sharing"> slides</a>, and <a href="https://www.youtube.com/watch?v=zWZowrpaZ1c">demo</a>.
 <br/>
 
@@ -401,15 +409,15 @@ B14 Lab course on Image Analysis (Hilary'17)
         <div class="my-auto">
         <h2 class="mb-5">Outreach</h2>
         <p class="lead mb-5">
-09/18: I presented my work on realtime instance segmentation at the <a href="http://www.cs.ox.ac.uk/">CS dept.</a> open-day.
+09/18: I presented my work on realtime instance segmentation at the <a href="http://www.cs.ox.ac.uk/">CS dept.</a> open-day to interested students and parents. 
 <br/>
-06/18 to present: I will be the <a href="https://www.cs.ox.ac.uk/societies/women/committee.html">Outreach & Scholarship officer</a> for <a href="https://www.cs.ox.ac.uk/societies/women/">OxWoCS</a> for the academic year 2018-19.
+06/18: I will be the <a href="https://www.cs.ox.ac.uk/societies/women/committee.html">Outreach & Scholarship officer</a> for <a href="https://www.cs.ox.ac.uk/societies/women/">OxWoCS</a> for the academic year 2018-19.
 <br/>
 06/18: I co-organised a coding masterclass for girls aged 9-12 using <a href="https://www.youtube.com/watch?v=0yQYr7CIxBc&feature=youtu.be">spheros</a> as part of the <a href="https://www.cs.ox.ac.uk/conferences/InspireHer/">InspireHer!</a> series.
 <br/>
 05/18: I co-organised a <a href = "https://www.hayfestival.com/p-13591-bushra-alahmadi-klaudia-krawiecka-saumya-jetley.aspx">coding workshop for students aged 12-13</a> at the <a href="http://www.hayfestival.com/wales/home">Hay Science Festival</a>.
 <br/>
-06/17 to 05/18: I was the Industry coordinator and External relations officer with <a href="https://www.cs.ox.ac.uk/societies/women/">OxWoCS</a>.
+06/17: I will be the Industry coordinator and External relations officer with <a href="https://www.cs.ox.ac.uk/societies/women/">OxWoCS</a> for the academic year 2017-18.
 <br/>
 05/17 to 06/17: As a student outreach ambassador for the <a href="http://www.eng.ox.ac.uk/">Department of Engineering Science, University of Oxford</a>, I have engaged with yr. 11-13 students at a host of events including - <a href="https://www.oxengscioutreach.com/events">Lubbock lectures for schools, International Women in Engineering Day and Engineering Open Days</a>. One set of slides especially popular amongst students during my classroom talks can be found <a href="./news/AI_for_visualperception_slides.html">here</a>.
 <br/>
