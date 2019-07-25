@@ -1,0 +1,80 @@
+<!
+-- The following template has been taken from https://www.w3schools.com/w3css/w3
+  css_templates.asp
+and has been modified for purpose.-->
+
+<!DOCTYPE html>
+<head>
+
+<title>Saumya Jetley</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Times New Roman", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
+
+/* unvisited link */
+a:link {
+    color: IndianRed;
+}
+/* visited link */
+a:visited {
+    color: IndianRed;
+}
+/* mouse over link */
+a:hover {
+    color: IndianRed;
+}
+/* selected link */
+a:active {
+    color: Indianred;
+}
+
+
+a.sidemenu {
+    color: black;
+}
+
+a.sidemenu:hover {
+    color: IndianRed;
+}
+
+a.sidemenu.onView {
+    color: Indianred;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-main" style="margin-left:100px; margin-right:100px">
+ <header class="w3-container w3-xlarge">
+    <h3 class="mb-5"><strong>With Friends Like These, Who Needs Adversaries?</strong></h3>
+	</br>
+    <img src="../projects/traces-1.png" width="50%">
+    <p class="mb-3" style="font-size:70%; font-family:Times New Roman;" align="justify"> <br/> 
+This work performs a principled analysis of the class decision functions learned by classification CNNs by contextualising an existing geometrical framework for network decision boundary analysis. 
+Our research uncovers some very intriguing yet simplistic facets of the class score functions learned by these networks that explain their adversarial vulnerability.
+We identify the fact that specific input image space directions tend to be associated with fixed class identities. 
+This means that simply increasing the magnitude of correlation between the input image and a single image space direction causes the nets to believe that more (or less) of the class is present. 
+This allows us to provide a new perspective on the existence of universal adversarial perturbations.
+Further, the input image space directions which the networks use to achieve their classification performance are the same along which the networks are most vulnerable to attack; the vulnerability arises from the rather simplistic non-linear use of the directions. Thus, as it stands, the performance and vulnerability of these nets are closely entwined.
+Various notable observations emerge from this, one of which is that any attempt to make a trained network more robust to an adversarial attack by suppressing input data dimensions or intermediate network features would always be accompanied by a corresponding loss in network accuracy. 
+Moreover, if the attack is optimised to take into account the suppression of dimensions, it regains its effectiveness.
+These results present key implications for future efforts to construct neural nets that are both accurate and robust to adversarial attack.
+<br/> 
+[<a href="https://arxiv.org/abs/1807.04200">paper</a>]
+[<a >code</a>]
+[<a href="https://www.youtube.com/watch?v=hOQdyInhYi0">video</a>]
+    </p>
+</header>	
+</div>
+
+</body>

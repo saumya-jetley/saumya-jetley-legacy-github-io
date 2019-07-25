@@ -1,0 +1,72 @@
+<!
+-- The following template has been taken from https://www.w3schools.com/w3css/w3
+  css_templates.asp
+and has been modified for purpose.-->
+
+<!DOCTYPE html>
+<head>
+
+<title>Saumya Jetley</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Times New Roman", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
+
+/* unvisited link */
+a:link {
+    color: IndianRed;
+}
+/* visited link */
+a:visited {
+    color: IndianRed;
+}
+/* mouse over link */
+a:hover {
+    color: IndianRed;
+}
+/* selected link */
+a:active {
+    color: Indianred;
+}
+
+
+a.sidemenu {
+    color: black;
+}
+
+a.sidemenu:hover {
+    color: IndianRed;
+}
+
+a.sidemenu.onView {
+    color: Indianred;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-main" style="margin-left:100px; margin-right:100px">
+ <header class="w3-container w3-xlarge">
+    <h3 class="mb-5"><strong>Leveraging Prototypical Priors</strong></h3>
+	</br>
+    <img src="../projects/prototypical_priors-1.png" width="50%">
+    <p class="mb-3" style="font-size:70%; font-family:Times New Roman;" align="justify"> <br/> 
+	Recent works on zero-shot learning make use of side information such as visual attributes or natural language semantics to define the relations between output visual classes and then use these relationships to draw inference on new unseen classes at test time. In a novel extension to this idea, we propose the use of visual prototypical concepts as side information. For most real-world visual object categories, it may be difficult to establish a unique prototype. However, in cases such as traffic signs, brand logos, flags, and even natural language characters, these prototypical templates are available and can be leveraged for an improved recognition performance. Using prototypes as prior information, the deepnet pipeline learns the input image projections into the prototypical embedding space subject to minimization of the final classification loss. Based on our experiments, prototypical embeddings incorporated in a conventional convolutional neural network improve the recognition performance. The same system can be directly deployed to draw inference on unseen classes by simply adding the prototypical information for these new classes at test time.
+	<br/> 
+	[<a href="https://arxiv.org/abs/1512.01192">paper</a>]
+    [<a href="https://github.com/saumya-jetley/cd_Prototypical_Priors_BMVC15">code</a>]
+    [<a >video</a>]
+    </p>
+</header>	
+</div>
+
+</body>

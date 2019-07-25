@@ -1,0 +1,72 @@
+<!
+-- The following template has been taken from https://www.w3schools.com/w3css/w3
+  css_templates.asp
+and has been modified for purpose.-->
+
+<!DOCTYPE html>
+<head>
+
+<title>Saumya Jetley</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Times New Roman", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
+
+/* unvisited link */
+a:link {
+    color: IndianRed;
+}
+/* visited link */
+a:visited {
+    color: IndianRed;
+}
+/* mouse over link */
+a:hover {
+    color: IndianRed;
+}
+/* selected link */
+a:active {
+    color: Indianred;
+}
+
+
+a.sidemenu {
+    color: black;
+}
+
+a.sidemenu:hover {
+    color: IndianRed;
+}
+
+a.sidemenu.onView {
+    color: Indianred;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-main" style="margin-left:100px; margin-right:100px">
+ <header class="w3-container w3-xlarge">
+    <h3 class="mb-5"><strong>Real-time Instance Segmentation</strong></h3>
+	</br>
+    <img src="../projects/straight_to-shapes.png" width="50%">
+    <p class="mb-3" style="font-size:70%; font-family:Times New Roman;" align="justify"> <br/> 
+	In this work, we propose to directly regress to objects' shapes in addition to the object bounding boxes and categories. It is crucial to find an appropriate shape representation that is compact and decodable, and in which objects can be compared for higher-order concepts such as view similarity, pose variation and occlusion. To achieve this, we use a denoising convolutional auto-encoder to establish an embedding space, and place the decoder after a fast end-to-end network trained to regress directly to the encoded shape vectors. This yields what to the best of our knowledge is the first real-time shape prediction network, running at ~35 FPS on a high-end desktop, that additionally generalises to unseen categories. 
+	<br/> 
+	[<a href="https://arxiv.org/abs/1611.07932">paper</a>]
+    [<a href="https://github.com/torrvision/straighttoshapes">code</a>]
+    [<a href="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1">video</a>]    
+	</p>
+</header>	
+</div>
+
+</body>
