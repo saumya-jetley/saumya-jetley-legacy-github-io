@@ -164,57 +164,20 @@ Such energy, great leadership, AI for social good in Indian space, ftw!
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="projects">
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
-
+ 
 <ul>
-    <li><h5 class="mb-5">With Friends Like These, Who Needs Adversaries?</h5>
-    <il>
-    <img src="./projects/traces-1.png" width="50%">
-    <p class="lead"> <br/> 
-This work performs a principled analysis of the class decision functions learned by classification CNNs by contextualising an existing geometrical framework for network decision boundary analysis. 
-Our research uncovers some very intriguing yet simplistic facets of the class score functions learned by these networks that explain their adversarial vulnerability.
-We identify the fact that specific input image space directions tend to be associated with fixed class identities. 
-This means that simply increasing the magnitude of correlation between the input image and a single image space direction causes the nets to believe that more (or less) of the class is present. 
-This allows us to provide a new perspective on the existence of universal adversarial perturbations.
-Further, the input image space directions which the networks use to achieve their classification performance are the same along which the networks are most vulnerable to attack; the vulnerability arises from the rather simplistic non-linear use of the directions. Thus, as it stands, the performance and vulnerability of these nets are closely entwined.
-Various notable observations emerge from this, one of which is that any attempt to make a trained network more robust to an adversarial attack by suppressing input data dimensions or intermediate network features would always be accompanied by a corresponding loss in network accuracy. 
-Moreover, if the attack is optimised to take into account the suppression of dimensions, it regains its effectiveness.
-These results present key implications for future efforts to construct neural nets that are both accurate and robust to adversarial attack.
-<br/> [<a href="https://arxiv.org/abs/1807.04200">paper</a>]
-      [<a >code</a>]
-      [<a href="https://www.youtube.com/watch?v=hOQdyInhYi0">video</a>]
-    </p><h6 class="mb-5"></h6>
-
-    <li><h5 class="mb-5">Learning to Pay Attention</h5><il>
-    <img src="./projects/multi_level_attention-1.png" width="50%">
-    <p class="lead"> <br/> We propose an end-to-end-trainable attention module for convolutional neural network (CNN) architectures for image classification.  The module takes as input the 2D feature vector maps which form the intermediate representations of the input image at different stages in the CNN pipeline, and outputs a 2D matrix of scores for each map. Standard CNN architectures are trained under the constraint that a convex combination of the intermediate 2D feature vectors, as parameterised by the score matrices, must alone be used for classification. Our experimental observations provide clear evidence to the effect that the learned scores simulate 'attention'by amplifying the relevant and suppressing the irrelevant or misleading regions of the input image. Thus, the proposed function is able to bootstrap standard CNN architectures for the task of image classification and demonstrate superior generalisation.
-<br/> [<a href="https://openreview.net/forum?id=HyzbhfWRW">paper</a>]
-      [<a href="https://github.com/saumya-jetley/cd_ICLR18_ActiveAttention">code</a>]
-      [<a >video</a>]
-    </p><h6 class="mb-5"></h6>
-
-    <li><h5 class="mb-5">Real-time Instance Segmentation</h5><il>
-    <img src="./projects/straight_to-shapes.png" width="50%">
-    <p class="lead"> <br/> In this work, we propose to directly regress to objects' shapes in addition to the object bounding boxes and categories. It is crucial to find an appropriate shape representation that is compact and decodable, and in which objects can be compared for higher-order concepts such as view similarity, pose variation and occlusion. To achieve this, we use a denoising convolutional auto-encoder to establish an embedding space, and place the decoder after a fast end-to-end network trained to regress directly to the encoded shape vectors. This yields what to the best of our knowledge is the first real-time shape prediction network, running at ~35 FPS on a high-end desktop, that additionally generalises to unseen categories. 
-<br/> [<a href="https://arxiv.org/abs/1611.07932">paper</a>]
-      [<a href="https://github.com/torrvision/straighttoshapes">code</a>]
-      [<a href="https://www.youtube.com/embed/zWZowrpaZ1c?ecver=1">video</a>]
-    </p><h6 class="mb-5"></h6>
-
-    <li><h5 class="mb-5">Human Saliency Estimation</h5><il>
-    <img src="./projects/saliency-estimation.png" width="50%">
-    <p class="lead"> <br/>  In this work, we introduce a new saliency map model which formulates a map as a generalized Bernoulli distribution. We then train a deep architecture to predict such maps using novel loss functions which pair the softmax activation function with measures designed to compute distances between probability distributions. We show in extensive experiments the effectiveness of such loss functions over standard ones on four public benchmark datasets, and demonstrate improved performance over state-of-the-art saliency methods. 
-<br/> [<a href="https://ieeexplore.ieee.org/document/7780989">paper</a>]
-      [<a href="https://github.com/saumya-jetley/cd_Saliency_PDP">code</a>]
-      [<a href="https://www.youtube.com/watch?v=H9CSwiY_ApU">video</a>]
-    </p><h6 class="mb-5"></h6>
-
-    <li><h5 class="mb-5">Leveraging Prototypical Priors</h5><il>
-    <img src="./projects/prototypical_priors-1.png" width="50%">
-    <p class="lead"> <br/> Recent works on zero-shot learning make use of side information such as visual attributes or natural language semantics to define the relations between output visual classes and then use these relationships to draw inference on new unseen classes at test time. In a novel extension to this idea, we propose the use of visual prototypical concepts as side information. For most real-world visual object categories, it may be difficult to establish a unique prototype. However, in cases such as traffic signs, brand logos, flags, and even natural language characters, these prototypical templates are available and can be leveraged for an improved recognition performance. Using prototypes as prior information, the deepnet pipeline learns the input image projections into the prototypical embedding space subject to minimization of the final classification loss. Based on our experiments, prototypical embeddings incorporated in a conventional convolutional neural network improve the recognition performance. The same system can be directly deployed to draw inference on unseen classes by simply adding the prototypical information for these new classes at test time.
-<br/> [<a href="https://arxiv.org/abs/1512.01192">paper</a>]
-      [<a href="https://github.com/saumya-jetley/cd_Prototypical_Priors_BMVC15">code</a>]
-      [<a >video</a>]<br/><br/></p><h6 class="mb-5"></h6>
-
+	<li><div class="mb-3" style="font-size:130%; color:#727b84"><a href='./projects/Project6-StraightToShapes++.html'>Straight to Shapes++: Real-time Instance Segmentation Made More Accurate</a></div><il>
+	
+    <li><div class="mb-3" style="font-size:130%; color:#727b84"><a href='./projects/Project5-WithFriendsLikeThese.html'>With Friends Like These, Who Needs Adversaries?</a></div><il>
+    
+    <li><div class="mb-3" style="font-size:130%; color:#727b84"><a href='./projects/Project4-LearnToPayAttention.html'>Learn to Pay Attention</a></div><il>
+    
+    <li><div class="mb-3" style="font-size:130%; color:#727b84"><a href='./projects/Project3-StraightToShapes.html'>Straight to Shapes: Real-time Detection of Encoded Shapes</a></div><il>
+    
+    <li><div class="mb-3" style="font-size:130%; color:#727b84"><a href='./projects/Project2-HumanSaliencyEstimation.html'>End-to-end Saliency Mapping via Probability Distribution Prediction</a></div><il>
+    
+    <li><div class="mb-3" style="font-size:130%; color:#727b84"><a href='./projects/Project1-PrototypicalPriors.html'>Prototypical Priors: From Improving Classification to Zero-Shot Learning</a></div><il>
+    
 </ul>
 </div>
 </section>
@@ -228,6 +191,16 @@ These results present key implications for future efforts to construct neural ne
           <h2 class="mb-5">Publications</h2>
 
     <p class="lead mb-5">
+
+      <h6> [2019] </h6>
+
+      <b> Straight to Shapes++: Real-time Instance Segmentation Made More Accurate,</b> 
+      Laurynas Miksys, Saumya Jetley, Michael Sapienza, Stuart Golodetz, Philip H.S. Torr,
+      <i>Arxiv preprint 2019</i>
+      [<a href="https://arxiv.org/abs/1905.11358">pdf</a>]
+      [<a >code</a>]
+      [<a href="./bibs/sts++.html">bibtex</a>]<br/><br/>
+
 
       <h6> [2018] </h6>
 
@@ -249,7 +222,7 @@ These results present key implications for future efforts to construct neural ne
       
       <h6> [2017] </h6>
       
-      <b> End-to-end saliency mapping via probability distribution prediction, </b> 
+      <b> End-to-end Saliency Mapping via Probability Distribution Prediction, </b> 
       Saumya Jetley, Naila Murray, Eleonora Vig,
       <i>U.S. Patent 9,830,529 with Xerox Corp (now Naver Labs)</i>
       [<a href="https://patents.google.com/patent/US9830529B2/en">details</a>]<br/><br/>
@@ -272,7 +245,7 @@ These results present key implications for future efforts to construct neural ne
 
       <h6> [2015] </h6>
 
-      <b> Prototypical Priors: From Improving Classification to Zero-Shot Learning , </b> 
+      <b> Prototypical Priors: From Improving Classification to Zero-Shot Learning, </b> 
       Saumya Jetley, Bernardino Romera-Paredes, Sadeep Jayasumana, Philip H.S. Torr,
       <i>Proceedings of the British Machine Vision Conference (BMVC) 2015</i>
       [<a href="https://arxiv.org/abs/1512.01192">pdf</a>]

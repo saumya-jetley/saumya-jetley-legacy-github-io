@@ -1,0 +1,72 @@
+<!
+-- The following template has been taken from https://www.w3schools.com/w3css/w3
+  css_templates.asp
+and has been modified for purpose.-->
+
+<!DOCTYPE html>
+<head>
+
+<title>Saumya Jetley</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Times New Roman", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
+
+/* unvisited link */
+a:link {
+    color: IndianRed;
+}
+/* visited link */
+a:visited {
+    color: IndianRed;
+}
+/* mouse over link */
+a:hover {
+    color: IndianRed;
+}
+/* selected link */
+a:active {
+    color: Indianred;
+}
+
+
+a.sidemenu {
+    color: black;
+}
+
+a.sidemenu:hover {
+    color: IndianRed;
+}
+
+a.sidemenu.onView {
+    color: Indianred;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-main" style="margin-left:100px; margin-right:100px">
+ <header class="w3-container w3-xlarge">
+    <h3 class="mb-5"><strong>Learn to Pay Attention</strong></h3>
+	</br>
+	<img src="./multi_level_attention-1.png" width="50%">
+    <p class="mb-3" style="font-size:70%; font-family:Times New Roman;" align="justify"> <br/> 
+    We propose an end-to-end-trainable attention module for convolutional neural network (CNN) architectures for image classification.  The module takes as input the 2D feature vector maps which form the intermediate representations of the input image at different stages in the CNN pipeline, and outputs a 2D matrix of scores for each map. Standard CNN architectures are trained under the constraint that a convex combination of the intermediate 2D feature vectors, as parameterised by the score matrices, must alone be used for classification. Our experimental observations provide clear evidence to the effect that the learned scores simulate 'attention'by amplifying the relevant and suppressing the irrelevant or misleading regions of the input image. Thus, the proposed function is able to bootstrap standard CNN architectures for the task of image classification and demonstrate superior generalisation.
+	<br/> 
+	[<a href="https://openreview.net/forum?id=HyzbhfWRW">paper</a>]
+    [<a href="https://github.com/saumya-jetley/cd_ICLR18_ActiveAttention">code</a>]
+    [<a >video</a>]
+    </p>
+</header>	
+</div>
+
+</body>

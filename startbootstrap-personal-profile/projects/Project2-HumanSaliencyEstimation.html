@@ -51,20 +51,22 @@ a.sidemenu.onView {
 </style>
 
 </head>
+  
+    
 
 <body>
 
 <div class="w3-main" style="margin-left:100px; margin-right:100px">
  <header class="w3-container w3-xlarge">
-    <h3 class="mb-5"><strong>Learning to Pay Attention</strong></h3>
+    <h3 class="mb-5"><strong>End-to-end Saliency Mapping via Probability Distribution Prediction</strong></h3>
 	</br>
-	<img src="../projects/multi_level_attention-1.png" width="50%">
+    <img src="./saliency-estimation.png" width="35%">
     <p class="mb-3" style="font-size:70%; font-family:Times New Roman;" align="justify"> <br/> 
-    We propose an end-to-end-trainable attention module for convolutional neural network (CNN) architectures for image classification.  The module takes as input the 2D feature vector maps which form the intermediate representations of the input image at different stages in the CNN pipeline, and outputs a 2D matrix of scores for each map. Standard CNN architectures are trained under the constraint that a convex combination of the intermediate 2D feature vectors, as parameterised by the score matrices, must alone be used for classification. Our experimental observations provide clear evidence to the effect that the learned scores simulate 'attention'by amplifying the relevant and suppressing the irrelevant or misleading regions of the input image. Thus, the proposed function is able to bootstrap standard CNN architectures for the task of image classification and demonstrate superior generalisation.
+	In this work, we introduce a new saliency map model which formulates a map as a generalized Bernoulli distribution. We then train a deep architecture to predict such maps using novel loss functions which pair the softmax activation function with measures designed to compute distances between probability distributions. We show in extensive experiments the effectiveness of such loss functions over standard ones on four public benchmark datasets, and demonstrate improved performance over state-of-the-art saliency methods. 
 	<br/> 
-	[<a href="https://openreview.net/forum?id=HyzbhfWRW">paper</a>]
-    [<a href="https://github.com/saumya-jetley/cd_ICLR18_ActiveAttention">code</a>]
-    [<a >video</a>]
+	[<a href="https://ieeexplore.ieee.org/document/7780989">paper</a>]
+    [<a href="https://github.com/saumya-jetley/cd_Saliency_PDP">code</a>]
+    [<a href="https://www.youtube.com/watch?v=H9CSwiY_ApU">video</a>]
     </p>
 </header>	
 </div>
