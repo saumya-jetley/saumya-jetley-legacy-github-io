@@ -1,0 +1,84 @@
+<!
+-- The following template has been taken from https://www.w3schools.com/w3css/w3
+  css_templates.asp
+and has been modified for purpose.-->
+
+<!DOCTYPE html>
+<head>
+
+<title>Saumya Jetley</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+.w3-sidebar a {font-family: "Times New Roman", cursive}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Times New Roman", cursive}
+
+/* unvisited link */
+a:link {
+    color: IndianRed;
+}
+/* visited link */
+a:visited {
+    color: IndianRed;
+}
+/* mouse over link */
+a:hover {
+    color: IndianRed;
+}
+/* selected link */
+a:active {
+    color: Indianred;
+}
+
+
+a.sidemenu {
+    color: black;
+}
+
+a.sidemenu:hover {
+    color: IndianRed;
+}
+
+a.sidemenu.onView {
+    color: Indianred;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="w3-main" style="margin-left:100px; margin-right:100px">
+ <header class="w3-container w3-xlarge">
+    <h3 class="mb-5"><strong>Extremely Private Supervised Learning</strong></h3>
+	</br>
+    <p class="mb-3" style="font-size:70%; font-family:Times New Roman;" align="justify"> <br/> 
+In quite a few sensitive domains, such as hospitals, or financial markets, the data curator has access to a 
+      large repository of private data, but is unwilling/unable to divulge any of this data, referred to as the target data. 
+      In-situ analysis is compromised owing to constraints on computational resources or on availability of in-house experts. 
+      The novelty of the proposed approach, called ExPriL, is to only require some access to the marginals of the target data, 
+      in order to learn a fitting hypothesis, and through it a privacy-preserving synthetic version of the target data. 
+      Several approaches, aimed to learn from (very) limited information about the target data, have been proposed at the intersection 
+      of privacy-preserving learning, generative modelling, and domain adaptation. 
+      All these approaches, to our best knowledge, assume that the learner has access to the joint distribution of the target data, 
+      an assumption that the proposed approach relaxes significantly.
+      
+      This paper presents a new approach called ExPriL for learning from extremely private data. 
+      Iteratively, the learner supplies a candidate hypothesis and the data curator only releases the marginals of the error 
+      incurred by the hypothesis on the privately-held target data. 
+      Using the marginals as supervisory signal, the goal is to learn a hypothesis that fits this target data as best as possible. 
+      The privacy of the mechanism is provably enforced, assuming that the overall number of iterations is known in advance.
+      [<a href="https://inria.hal.science/hal-03620873/document">paper</a>]
+[<a >code</a>]
+[<a >video</a>]
+    </p>
+</header>	
+</div>
+
+</body>
